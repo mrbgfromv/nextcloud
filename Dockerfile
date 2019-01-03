@@ -144,5 +144,5 @@ VOLUME /var/www/html
 COPY *.sh upgrade.exclude /
 COPY config/* /usr/src/nextcloud/config/
 
-ENTRYPOINT ["/entrypoint.sh"]
+#ENTRYPOINT ["/entrypoint.sh"]
 CMD ["apache2-foreground"]
