@@ -11,5 +11,8 @@ RUN docker-php-ext-install zlib
 # Mysql
 RUN docker-php-ext-install pdo_mysql
 
+# Info:
+# apache user / group: 33/33
+
 EXPOSE 80
 CMD ["apache2-foreground"]
