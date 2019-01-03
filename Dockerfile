@@ -5,11 +5,11 @@ RUN apt-get update && apt-get install -y libz-dev zlib1g-dev libpng-dev
 
 # Install modules
 # zib
-RUN docker-php-ext-install zlib
+RUN docker-php-ext-install -j$(nproc) zlib
 # gd
-RUN docker-php-ext-install zlib
+RUN docker-php-ext-install -j$(nproc) gd
 # Mysql
-RUN docker-php-ext-install pdo_mysql
+RUN docker-php-ext-install -j$(nproc) pdo_mysql
 
 # Info:
 # apache user / group: 33/33
