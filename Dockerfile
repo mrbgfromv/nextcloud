@@ -8,6 +8,7 @@ RUN set -ex; \
     \
     apt-get update; \
     apt-get install -y --no-install-recommends \
+        vim \
         rsync \
         bzip2 \
         busybox-static \
